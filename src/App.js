@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import TodoListApp from './components/TodoListApp'
+import './assets/styles/App.css'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="todolist">
+        <h1>My App</h1>
+        <TodoListApp />
+      </div>
+    )
+  }
+}
+
+export default App
+
+/* import "./App.css";
+import Counter from "./Counter";
+import Todo from "./Todo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Mobx Project</h1>
+      <hr />
+      <Counter />
+      <hr />
+      <Todo />
     </div>
   );
 }
 
 export default App;
+ */
